@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="707.0" prefWidth="1057.0" style="-fx-background-color: #00ffff;" styleClass="mainFxmlClass" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="paymentsystem.FXMLPaymentSystemController">
+   <children>
+      <Button fx:id="employeesBtn" alignment="BOTTOM_CENTER" contentDisplay="TOP" layoutY="134.0" mnemonicParsing="false" prefHeight="143.0" prefWidth="179.0" styleClass="buttonPaymentSystem" text="Employees" textAlignment="CENTER">
+         <font>
+            <Font name="Segoe UI Bold" size="22.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/icons8-employees-100.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Pane prefHeight="134.0" prefWidth="1057.0" style="-fx-background-color: black;">
+         <children>
+            <Label fx:id="companyNameLabel" alignment="CENTER" prefHeight="134.0" prefWidth="303.0" text="Company Name" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Segoe UI Bold" size="29.0" />
+               </font>
+            </Label>
+            <Label fx:id="userFullNameLabel" alignment="CENTER" layoutX="754.0" prefHeight="134.0" prefWidth="303.0" text="User Full Name" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Segoe UI Bold" size="29.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Button id="paySalaryBtn" fx:id="paySalaryBtn" alignment="BOTTOM_CENTER" contentDisplay="TOP" layoutY="277.0" mnemonicParsing="false" prefHeight="143.0" prefWidth="179.0" styleClass="buttonPaymentSystem" text="Pay Salary" textAlignment="CENTER">
+         <font>
+            <Font name="Segoe UI Bold" size="22.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/external-Payment-e-commerce-glyph-bartama-glyph-64-bartama-graphic.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="userBtn" alignment="BOTTOM_CENTER" contentDisplay="TOP" layoutY="420.0" mnemonicParsing="false" prefHeight="143.0" prefWidth="179.0" styleClass="buttonPaymentSystem" text="User" textAlignment="CENTER" visible="false">
+         <font>
+            <Font name="Segoe UI Bold" size="22.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/icons8-username-100.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Pane id="contentPane" fx:id="contentPane" layoutX="179.0" layoutY="134.0" prefHeight="573.0" prefWidth="878.0" />
+      <Button fx:id="logoutBtn" alignment="BOTTOM_CENTER" contentDisplay="TOP" layoutY="420.0" mnemonicParsing="false" prefHeight="143.0" prefWidth="179.0" styleClass="buttonPaymentSystem" text="Logout" textAlignment="CENTER">
+         <font>
+            <Font name="Segoe UI Bold" size="22.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/icons8-logout-90.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Pane layoutY="563.0" prefHeight="143.0" prefWidth="179.0" style="-fx-background-color: black;" />
+   </children>
+</AnchorPane>

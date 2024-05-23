@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="573.0" prefWidth="878.0" style="-fx-background-color: #00ffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="paymentsystem.FXMLPaySalaryOptionController">
+   <children>
+      <Pane fx:id="paySalaryPane" layoutX="503.0" layoutY="16.0" prefHeight="541.0" prefWidth="361.0" style="-fx-background-color: white;">
+         <children>
+            <GridPane hgap="5.0" layoutX="21.0" prefHeight="541.0" prefWidth="337.0" vgap="5.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="151.0" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="214.0" minWidth="10.0" prefWidth="112.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="230.0" minWidth="10.0" prefWidth="113.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Number Of Worked:" wrapText="true">
+                     <font>
+                        <Font name="Segoe UI" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Category:" wrapText="true" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Segoe UI" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="employeeCategoryLabel" text="-" underline="true" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Segoe UI Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Full Name:" wrapText="true" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Segoe UI" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="employeeNameLabel" text="-" underline="true" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Segoe UI Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Pay Rate Per Hour:" wrapText="true" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Segoe UI" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Extra Time Pay Rate:" wrapText="true" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="Segoe UI" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Tax Rate:" wrapText="true" GridPane.rowIndex="6">
+                     <font>
+                        <Font name="Segoe UI" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Add To Net Salary:" wrapText="true" GridPane.rowIndex="8">
+                     <font>
+                        <Font name="Segoe UI" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="employeeSurplusReasonTxt" prefHeight="200.0" prefWidth="40.0" promptText="Add A Reason For Adding" GridPane.columnIndex="2" GridPane.rowIndex="8">
+                     <font>
+                        <Font name="Segoe UI Italic" size="14.0" />
+                     </font>
+                  </TextArea>
+                  <HBox alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="128.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <children>
+                        <Label text="\$" underline="true" wrapText="true">
+                           <font>
+                              <Font name="Segoe UI Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="employeePayRateLabel" text="-" underline="true" wrapText="true">
+                           <font>
+                              <Font name="Segoe UI Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="128.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <children>
+                        <Label fx:id="employeeExtraTimePayRateLabel" text="-" underline="true" wrapText="true">
+                           <font>
+                              <Font name="Segoe UI Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label text="\%" underline="true" wrapText="true">
+                           <font>
+                              <Font name="Segoe UI Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="128.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                     <children>
+                        <Label fx:id="employeeTaxRateLabel" text="-" underline="true" wrapText="true">
+                           <font>
+                              <Font name="Segoe UI Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label text="\%" underline="true" wrapText="true">
+                           <font>
+                              <Font name="Segoe UI Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="128.0" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                     <children>
+                        <Label text="\$" underline="true" wrapText="true">
+                           <font>
+                              <Font name="Segoe UI Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="employeeSurplusTxt" prefHeight="24.0" prefWidth="181.0" promptText="0.00">
+                           <font>
+                              <Font name="Segoe UI Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <Label text="Deduct From Net Salary:" wrapText="true" GridPane.rowIndex="9">
+                     <font>
+                        <Font name="Segoe UI" size="14.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="128.0" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                     <children>
+                        <Label text="\$" underline="true" wrapText="true">
+                           <font>
+                              <Font name="Segoe UI Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="employeeDeductionTxt" prefHeight="24.0" prefWidth="181.0" promptText="0.00">
+                           <font>
+                              <Font name="Segoe UI Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <TextArea fx:id="employeeDeductionReasonTxt" prefHeight="200.0" prefWidth="40.0" promptText="Add A Reason For Deducting" GridPane.columnIndex="2" GridPane.rowIndex="9">
+                     <font>
+                        <Font name="Segoe UI Italic" size="14.0" />
+                     </font>
+                  </TextArea>
+                  <Label text="///////////////" GridPane.rowIndex="7">
+                     <font>
+                        <Font name="Segoe UI Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="///////////////" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                     <font>
+                        <Font name="Segoe UI Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="///////////////" GridPane.columnIndex="2" GridPane.rowIndex="7">
+                     <font>
+                        <Font name="Segoe UI Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Gross Salary:" wrapText="true" GridPane.rowIndex="10">
+                     <font>
+                        <Font name="Segoe UI" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Expected Working Time:" wrapText="true" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Segoe UI" size="14.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="128.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <children>
+                        <Label fx:id="employeeExpectWorkingTimeLabel" text="0" underline="true" wrapText="true">
+                           <font>
+                              <Font name="Segoe UI Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label text="Hours" underline="true" wrapText="true">
+                           <font>
+                              <Font name="Segoe UI Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="128.0" GridPane.columnIndex="1" GridPane.rowIndex="10">
+                     <children>
+                        <Label text="\$" underline="true" wrapText="true">
+                           <font>
+                              <Font name="Segoe UI Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="employeeGrossSalaryLabel" text="-" underline="true" wrapText="true">
+                           <font>
+                              <Font name="Segoe UI Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Label text="Tax:" wrapText="true" GridPane.rowIndex="11">
+                     <font>
+                        <Font name="Segoe UI" size="14.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="128.0" GridPane.columnIndex="1" GridPane.rowIndex="11">
+                     <children>
+                        <Label text="\$" underline="true" wrapText="true">
+                           <font>
+                              <Font name="Segoe UI Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="employeeTaxAmountLabel" text="-" underline="true" wrapText="true">
+                           <font>
+                              <Font name="Segoe UI Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Label text="Net Salary:" wrapText="true" GridPane.rowIndex="12">
+                     <font>
+                        <Font name="Segoe UI" size="14.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="128.0" GridPane.columnIndex="1" GridPane.rowIndex="12">
+                     <children>
+                        <Label text="\$" textFill="RED" underline="true" wrapText="true">
+                           <font>
+                              <Font name="Segoe UI Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="employeeNetSalary" text="-" textFill="RED" underline="true" wrapText="true">
+                           <font>
+                              <Font name="Segoe UI Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Button fx:id="paySalaryBtn" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="31.0" prefWidth="111.0" style="-fx-background-color: #0a97fb;" text="Pay Salary" textAlignment="CENTER" textFill="WHITE" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="12">
+                     <font>
+                        <Font name="Segoe UI Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <HBox alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="128.0" GridPane.columnIndex="1">
+                     <children>
+                        <TextField fx:id="employeeTimeWorkedTxt" prefHeight="28.0" prefWidth="71.0" promptText="0">
+                           <font>
+                              <Font name="Segoe UI Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Label text="Hours" underline="true" wrapText="true">
+                           <font>
+                              <Font name="Segoe UI Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </GridPane>
+         </children>
+      </Pane>
+      <Button fx:id="clearEmployeeIdBtn" alignment="CENTER" contentDisplay="CENTER" layoutX="338.0" layoutY="43.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="101.0" style="-fx-background-color: #0a97fb;" text="Clear" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Segoe UI Bold" size="20.0" />
+         </font>
+      </Button>
+      <TextField fx:id="employeeIdForPaymentText" layoutX="45.0" layoutY="46.0" prefHeight="31.0" prefWidth="278.0" promptText="Employee Id">
+         <font>
+            <Font name="Segoe UI Bold" size="16.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="31.0" fitWidth="38.0" layoutX="14.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/icons8-name-96.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="19.0" layoutY="17.0" prefHeight="28.0" prefWidth="137.0" text="Set The Date:" visible="false">
+         <font>
+            <Font name="Segoe UI Bold" size="21.0" />
+         </font>
+      </Label>
+      <Spinner fx:id="daySpinner" layoutX="175.0" layoutY="15.0" prefHeight="31.0" prefWidth="81.0" visible="false" />
+      <Spinner fx:id="monthSpinner" layoutX="281.0" layoutY="14.0" prefHeight="31.0" prefWidth="108.0" visible="false" />
+      <Label alignment="CENTER" layoutX="256.0" layoutY="15.0" prefHeight="28.0" prefWidth="24.0" text="/" visible="false">
+         <font>
+            <Font name="Segoe UI Bold" size="21.0" />
+         </font>
+      </Label>
+      <Spinner fx:id="yearSpinner" layoutX="412.0" layoutY="15.0" prefHeight="31.0" prefWidth="81.0" visible="false" />
+      <Label alignment="CENTER" layoutX="389.0" layoutY="15.0" prefHeight="28.0" prefWidth="24.0" text="/" visible="false">
+         <font>
+            <Font name="Segoe UI Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="19.0" layoutY="94.0" prefHeight="28.0" prefWidth="161.0" text="Payment Table: " underline="true">
+         <font>
+            <Font name="Segoe UI Bold" size="21.0" />
+         </font>
+      </Label>
+      <TableView fx:id="paymentTableTbVw" layoutX="19.0" layoutY="122.0" prefHeight="322.0" prefWidth="476.0">
+        <columns>
+          <TableColumn fx:id="dateTbColumn" prefWidth="120.0" text="Date" />
+          <TableColumn fx:id="netSalaryTbColumn" prefWidth="102.0" text="Net&#10;Salary&#10;Payed($)" />
+            <TableColumn fx:id="grossSalaryTbColumn" prefWidth="81.0" text="Gross&#10;Salary($)" />
+            <TableColumn fx:id="taxSalaryTbColumn" prefWidth="81.0" text="Tax&#10;Payed($)" />
+            <TableColumn fx:id="amountAddedSalaryTbColumn" prefWidth="87.0" text="Amount&#10;Added To&#10;Net&#10;Salary(+$)" />
+            <TableColumn fx:id="amountAddedSalaryReasonTbColumn" prefWidth="145.0" text="Reason of Amount&#10;Added To Net&#10;Salary($)" />
+            <TableColumn fx:id="amountDeductedSalaryTbColumn" prefWidth="87.0" text="Amount&#10;Deducted&#10;From Net&#10;Salary(-$)" />
+            <TableColumn fx:id="amountDeductedSalaryReasonTbColumn" prefWidth="145.0" text="Reason of Amount&#10;Deducted From&#10;Net Salary($)" />
+        </columns>
+      </TableView>
+      <ImageView fx:id="employeePictureImgView" fitHeight="110.0" fitWidth="110.0" layoutX="384.0" layoutY="449.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/male-user-icon.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>
